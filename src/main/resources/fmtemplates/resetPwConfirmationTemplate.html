@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reset password confirmation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            font-family: Sans-Serif,serif;
+        }
+    </style>
+</head>
+
+
+<body>
+<img src="${root.taveoIconBase64}" alt="taveoLogo" style="height: 120px;width: 120px;border-radius: 15px" class="pull-right"/>
+<h3>Dear ${root.name}, you have successfully reset your password.</h3>
+
+<p>
+    <span>This is simply a notification to inform you that your password was reset at <strong>${root.now}</strong></span>
+</p>
+
+<br/>
+
+<div>
+    If you did not change your password, there is a high likelihood that your email account has been compromised.<br/>
+    In such an event we highly recommend that you change both your email and Taveo passwords, as well as revising your current security configurations.
+
+</div>
+<br/>
+<p>
+    <span><strong>Sincerely yours, the Time-Saver team - saving your precious time</strong></span><br/><br/>
+    <img src="${root.timesaverIconBase64}" alt="timeSaverLogo" style="height: 120px;width: 120px;border-radius: 15px" class="pull-left"/>
+</p>
+
+</body>
+</html>

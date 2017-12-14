@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email confirmation</title>
+
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="./../js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="./confirm-email.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <br/>
+
+    <div class="well well-lg">
+        <img src="../img/TimeSaver-logo.jpg" alt="timeSaverLogo" style="height: 120px;width: 120px;border-radius: 15px" class="pull-right"/>
+        <h1>Confirmation of email <span id="email" name="email"></span></h1>
+        <br/>
+
+        <p id="validQueryParam">
+            The email confirmation should start automatically. If not, please click this button
+            <span class="btn btn-primary" id="startConfirmation">Confirm email</span>
+        </p>
+        <p id="inValidQueryParam" hidden>
+            <i class="fa fa-frown-o" aria-hidden="true"></i>
+            Oh no, it looks like your link has been broken, please re-check your url
+        </p>
+
+
+        <br/>
+        <br/>
+        <br/>
+        <div class="row" id="status">
+            <div class="col-md-2">
+                <h3><strong>Status:</strong></h3>
+            </div>
+            <div class="col-md-10">
+                <h3 id="loading"><i><span>Working ...</span></i>&nbsp;&nbsp;<i class="fa fa-spinner" aria-hidden="true"></i></h3>
+                <div class="alert alert-success" id="verified" hidden>
+                    <strong>Email verified!</strong> <i>Thank you, your account is now activated</i>
+                </div>
+
+                <div class="alert alert-danger" id="failedVerification" hidden>
+                    <strong>Your email could not be validated!</strong> <i>Please ensure you have created a user account</i>
+                    <span id="serverInfo"></span>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

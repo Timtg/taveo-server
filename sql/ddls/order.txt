@@ -1,0 +1,15 @@
+users
+franchise
+stores
+store_settings
+receipts
+store_receipts
+store_openng_hours
+store_contact_person
+product
+product_price
+receipt products
+push notifications
+mobile verification
+email verification
+advertisement

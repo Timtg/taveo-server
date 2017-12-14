@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reset password request</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            font-family: Sans-Serif,serif;
+        }
+    </style>
+</head>
+
+
+<body>
+<img src="${root.taveoIconBase64}" alt="taveoLogo" style="height: 120px;width: 120px;border-radius: 15px" class="pull-right"/>
+<h3>Dear ${root.name}, we have received a request for resetting your password.</h3>
+
+<p>
+    <span>If you did not perform this request, please ignore this email </span>
+</p>
+
+<br/>
+
+<div>
+    Please find attached the one time generated passcode required for resetting your password: <br/>
+    <br/><strong>${root.otp}</strong><br/><br/>
+    This code will expire at <em>${root.validTo}</em>
+</div>
+<p>
+    <span><strong>Sincerely yours, the Time-Saver team - saving your precious time</strong></span><br/><br/>
+    <img src="${root.timesaverIconBase64}" alt="timeSaverLogo" style="height: 120px;width: 120px;border-radius: 15px" class="pull-left"/>
+</p>
+
+</body>
+</html>
